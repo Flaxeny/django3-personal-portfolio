@@ -1,8 +1,10 @@
 Hello Blog
 
+<h2>Roma has written {{ blogs.count }} post{{ blogs.count|pluralize }}</h2>
+
 {% for blog in blogs %}
-   <h2>{{ blog.title }}</h2>
-    <h5>{{ blog.date }}</h5>
-    <p>{{ blog.description }}</p>
+    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+    <h5>{{ blog.date|date:'M d Y'|upper }}</h5>
+    <p>{{ blog.description|safe|truncatechars:200 }}</p>
 
 {% endfor %}
