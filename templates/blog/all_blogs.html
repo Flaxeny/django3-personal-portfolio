@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 Hello Blog
 
 <h2>Roma has written {{ blogs.count }} post{{ blogs.count|pluralize }}</h2>
@@ -8,3 +12,5 @@ Hello Blog
     <p>{{ blog.description|safe|truncatechars:200 }}</p>
 
 {% endfor %}
+
+{% endblock %}
