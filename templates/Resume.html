@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My CV</title>
+    <link rel="stylesheet" href="{% static "cv.css" %}">
+    <link rel="icon" type="image/png" href="{% static "A1ECB2AF-3877-4F10-8107-676904F118DB-245-00000012C4B01ED8-removebg-preview.png" %}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'home' %}">
+    <img src="{% static "A1ECB2AF-3877-4F10-8107-676904F118DB-245-00000012C4B01ED8-removebg-preview.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
+    Flaxen
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="mr-auto"></div>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+          <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+            <h6 class="dropdown-header">Dropdown header</h6>
+            <a class="dropdown-item" href="{% url "resume" %}">Resume</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/roman-skorokhodov-7b3324222/" target="_blank">LinkedIn</a>
+              <a class="dropdown-item" href="https://twitter.com/flaxenyd" target="_blank">Twitter</a>
+              <a class="dropdown-item" href="{% url 'blog:all_blogs' %}" target="_blank">Blog</a>
+          </div>
+
+        </li>
+
+      </ul>
+
+      </div>
+  </nav>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name">Roman</span>
+      <span class="last-name">Skorokhodov</span>
+    </div>
+    <div class="contact-info">
+      <span class="email">Email: </span>
+      <span class="email-val">romskor11@gmail.com</span>
+      <span class="separator"></span>
+      <span class="phone">Phone: </span>
+      <span class="phone-val">+375(25)935-38-56</span>
+    </div>
+
+    <div class="about">
+      <span class="position">Junior Python Developer </span>
+      <span class="desc">
+        I am a junior python developer with more than 3 months of experience writing Python, Django3, SQL, Git, CISCO Packet Tracer. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.
+      </span>
+    </div>
+  </div>
+   <div class="details">
+    <div class="section">
+      <div class="section__title">Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">School №161</div>
+            <div class="addr">Minsk</div>
+            <div class="duration">Oct 2020 - Jul 2021</div>
+          </div>
+          <div class="right">
+            <div class="name">Software Engineer</div>
+            <div class="desc">Network Installation</div>
+          </div>
+        </div>
+                <div class="section__list-item">
+          <div class="left">
+            <div class="name">School №161</div>
+            <div class="addr">Minsk</div>
+            <div class="duration">Aug 2021 - Present</div>
+          </div>
+          <div class="right">
+            <div class="name">Computer Operator</div>
+            <div class="desc">Manage with databases</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Belarusian State University of Informatics and Radioelectronics</div>
+            <div class="addr">Minsk</div>
+            <div class="duration">Sep 2016 - Jun 2020</div>
+          </div>
+          <div class="right">
+            <div class="name">Radioelectronics Engineer</div>
+            <div class="desc">Learning Linear Algebra</div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Belarusian State University of Informatics and Radioelectronics</div>
+            <div class="addr">Minsk</div>
+            <div class="duration">Sep 2020 - Apr 2022</div>
+          </div>
+          <div class="right">
+            <div class="name">Infocommunications Engineer</div>
+            <div class="desc">Configuring Firewalls</div>
+          </div>
+        </div>
+          <div class="section__list-item">
+          <div class="left">
+            <div class="name">TeachMeSkills</div>
+            <div class="addr">Minsk</div>
+            <div class="duration">Sep 2021 - Feb 2022</div>
+          </div>
+          <div class="right">
+            <div class="name">Python Developer</div>
+            <div class="desc">Developing Websites</div>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+     <div class="section">
+      <div class="section__title">Projects</div>
+       <div class="section__list">
+         <div class="section__list-item">
+           <div class="name">Personal Portfolio</div>
+           <div class="text">Creation of a personal portfolio for future projects. Work on it is still progressing to this day.</div>
+         </div>
+
+         <div class="section__list-item">
+                    <div class="name">ToDo</div>
+             <div class="text">A small project along the lines of ToDo for daily tasks.</div>
+           </div>
+         </div>
+       </div>
+    </div>
+
+    <br>
+
+     <div class="section">
+       <div class="section__title">Skills</div>
+       <div class="skills">
+         <div class="skills__item">
+           <div class="left"><div class="name">
+             Python
+             </div></div>
+           <div class="right">
+                          <input  id="ck1" type="checkbox" checked/>
+
+             <label for="ck1"></label>
+                          <input id="ck2" type="checkbox" checked/>
+
+              <label for="ck2"></label>
+                         <input id="ck3" type="checkbox" checked/>
+
+              <label for="ck3"></label>
+                           <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+                          <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+
+           </div>
+         </div>
+
+       </div>
+       <div class="skills__item">
+           <div class="left"><div class="name">
+             Django</div></div>
+           <div class="right">
+                          <input  id="ck1" type="checkbox" checked/>
+
+             <label for="ck1"></label>
+                          <input id="ck2" type="checkbox" checked/>
+
+              <label for="ck2"></label>
+                         <input id="ck3" type="checkbox" />
+
+              <label for="ck3"></label>
+                           <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+                          <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+
+           </div>
+         </div>
+
+       </div>
+     <div class="section">
+     <div class="section__title">
+       Interests
+       </div>
+       <div class="section__list">
+         <div class="section__list-item">
+                  Football, programming,watching films and courses on Udemy.
+          </div>
+       </div>
+     </div>
+     </div>
+</body>
+</html>
